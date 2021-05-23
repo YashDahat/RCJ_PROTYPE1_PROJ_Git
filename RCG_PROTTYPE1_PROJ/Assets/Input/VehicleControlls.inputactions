@@ -1,0 +1,137 @@
+{
+    "name": "VehicleControlls",
+    "maps": [
+        {
+            "name": "FrontWheels",
+            "id": "ff614817-5a61-4d6f-a221-e7e9609d7c36",
+            "actions": [
+                {
+                    "name": "Turn",
+                    "type": "Value",
+                    "id": "b7fbf2d8-4a1c-48c8-8df3-a66b1a2730a7",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9ae3aad1-1d7b-45b2-9e64-ddcb0ace6959",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "RearWheels",
+            "id": "25ab7b54-5ab8-4724-b8a9-5006cacbdaef",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "ee77c27d-699a-40f7-8d96-77f03b36dc60",
+                    "expectedControlType": "Double",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e3e1f0a3-4b4f-4b6b-af0d-935cc9406a59",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "FullControl",
+            "id": "5926c00b-b19c-43b8-a71a-8f1b3d0a0132",
+            "actions": [
+                {
+                    "name": "Turn",
+                    "type": "Value",
+                    "id": "d06f8268-fe5d-45d3-8387-47ff4ac89cd9",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "b8728069-8c5f-4eee-bfc9-e980fd974340",
+                    "expectedControlType": "Double",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Brake",
+                    "type": "Value",
+                    "id": "866ffeca-7afc-45fe-8692-1d14df97926c",
+                    "expectedControlType": "Double",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "83244330-2837-4bea-b43f-25260fb493dc",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "35f1f59e-dded-4916-8f2c-fc307bc499cf",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4980cc46-fc40-4fe8-a5bc-8354d25e24ae",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Joystick",
+            "bindingGroup": "Joystick",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
